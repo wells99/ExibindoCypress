@@ -4,7 +4,7 @@ describe('template spec', () => {
     cy.wait(3000);
     cy.get('.ytSearchboxComponentInput')
     .click()
-    .type("Ok google - Agora vai");
+    .type("Novo Teste");
 
     cy.get('.ytSearchboxComponentInput').type('{enter}')
 
@@ -15,7 +15,7 @@ describe('template spec', () => {
     
     cy.get('.ytSearchboxComponentInput')
     .click()
-    .type("Novo Teste");
+    .type("Teste Completo");
     cy.wait(3000)
     cy.get('.ytSearchboxComponentSearchButton > yt-icon > .yt-icon-shape > div').click()
   })
